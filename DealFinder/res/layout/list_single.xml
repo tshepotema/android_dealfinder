@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/dealTitle"
+        android:src="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/deal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/deal_price"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/bg_color"
+        android:text="@string/dealTitle" />
+    
+    <TextView
+        android:id="@+id/deal_price"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/deal_title"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="@color/red"
+        android:text="@string/dealPriceTV" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/deal_price"
+        android:contentDescription="@string/next"
+        android:src="@drawable/ic_action_next_item" />
+    
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1" >
+
+    <TableRow>
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+       	    <TextView
+       	        android:id="@+id/lbl_fax"
+		        android:layout_width="85dp"
+		        android:layout_height="wrap_content"
+	        	android:textColor="#0085cc"
+		        android:text="@string/store_fax" />
+		    <TextView
+		        android:id="@+id/store_fax"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/lbl_fax"
+		        android:text="@string/store_fax" />	    
+        </RelativeLayout>
+    </TableRow>
+    
+    <TableRow>
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+       	    <TextView
+       	        android:id="@+id/lbl_email"
+		        android:layout_width="85dp"
+		        android:layout_height="wrap_content"
+	        	android:textColor="#0085cc"
+		        android:text="@string/store_email" />
+		    <TextView
+		        android:id="@+id/store_email"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/lbl_email"
+		        android:text="@string/store_email" />	    
+        </RelativeLayout>
+    </TableRow>
+    
+    <TableRow>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#0085cc"
+	        android:text="@string/store_trade_hrs" />
+    </TableRow>
+	    
+    <TableRow>
+	    <TextView
+	        android:id="@+id/store_trade_hrs"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/store_trade_hrs" />	    
+    </TableRow>
+    
+    <TableRow>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#0085cc"
+	        android:text="@string/store_address" />
+    </TableRow>
+	    
+    <TableRow>
+	    <TextView
+	        android:id="@+id/store_address"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/store_address" />	    
+    </TableRow>
+    
+</TableLayout>

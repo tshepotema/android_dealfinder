@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.dealfinder.FeaturedDeals" >
+
+    <item
+        android:id="@+id/action_featured_deals"
+        android:icon="@drawable/ic_action_star"
+        android:orderInCategory="104"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_featured_deals" />
+    
+    <item
+        android:id="@+id/action_stores_list"
+        android:icon="@drawable/ic_action_select_all"
+        android:orderInCategory="103"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_stores_list" />
+    
+    <item
+        android:id="@+id/action_store_locator"
+        android:icon="@drawable/ic_action_location_searching"
+        android:orderInCategory="102"
+        android:showAsAction="never"
+        android:title="@string/action_store_locator" />
+    
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_search" />
+    
+</menu>

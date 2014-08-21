@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<TextView
+	    android:id="@+id/tvDealTitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/dealTitle"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="78">
+        
+       <ImageView
+           android:id="@+id/ivDealImage"
+           android:layout_width="150dp"
+           android:layout_height="150dp"
+           android:layout_alignParentLeft="true"
+           android:contentDescription="@string/dealTitle"
+           android:src="@drawable/placeholder" />
+
+	    <TextView
+	        android:id="@+id/tvDescription"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/ivDealImage"
+	        android:layout_marginTop="28dp"
+	        android:text="@string/dealDescription"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <ImageView
+	        android:id="@+id/ivNetwork"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/ivDealImage"
+	        android:layout_alignLeft="@+id/tvNetwork"
+	        android:contentDescription="@string/dealTitle"
+	        android:src="@drawable/cellc" />
+	    
+	    <TextView
+	        android:id="@+id/tvNetwork"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_above="@+id/ivNetwork"
+	        android:layout_alignLeft="@+id/tvPrice"
+	        android:layout_alignRight="@+id/tvPrice"
+	        android:layout_marginBottom="16dp"
+	        android:text="@string/tvNetwork"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/tvPrice"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="16dp"
+	        android:layout_toRightOf="@+id/ivDealImage"
+	        android:text="@string/dealPriceTV"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="#FF0000" />
+
+	    <TextView
+	        android:id="@+id/tvPriceSub"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/tvPrice"
+	        android:layout_below="@+id/tvPrice"
+	        android:text="@string/tvPriceSub" />
+        
+    </RelativeLayout>
+
+	<ImageButton
+	    android:id="@+id/ibOrderNow"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:contentDescription="@string/dealTitle"	
+	    android:layout_gravity="center_horizontal"    
+	    android:src="@drawable/order_now" />
+	
+</LinearLayout>
